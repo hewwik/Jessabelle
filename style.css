@@ -6,7 +6,7 @@ html,body {
   overflow: hidden;
   font: 400 1em/1.5 "Neuton";
   background: black; 
-  color: rgba(255, 247, 252, 0.5); 
+  color: rgba(232, 30, 30, 0.5); 
   text-align: center;
   margin: 0;
 }
@@ -40,7 +40,7 @@ p span {
   margin: 0 auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   /* Clip Background Image */
-  background: #fccad6;
+  background: #d40f0f;
   -webkit-background-clip: text;
   background-clip: text;
   /* Animate Background Image */
