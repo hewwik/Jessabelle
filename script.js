@@ -82,12 +82,12 @@ BUTTERFLY.prototype = {
 			
 			var gradient = context.createRadialGradient(0, 0, 0, 0, 0, 80),
 				rate = Math.sin(this.theta / 4);
-			gradient.addColorStop(0, 'hsl(348, 100%, 95%)');
-			gradient.addColorStop(0.3, 'hsl(348, 100%,  ' + (76 + 10 * rate) +  '%)');
-			gradient.addColorStop(0.5, 'hsl(348, 100%, ' + (76 + 20 * rate) +  '%)');
-			gradient.addColorStop(1, 'hsl(2348, 100%, ' + (76 + 30 * rate) +  '%)');
+			gradient.addColorStop(0, 'hsl(360, 98%, 40%)');
+			gradient.addColorStop(0.3, 'hsl(0, 83%, 59%)');
+			gradient.addColorStop(0.5, 'hsl(0, 83%, 59%)');
+			gradient.addColorStop(1, 'hsl(0, 83%, 59%)');
 			context.lineWidth = 3;
-			context.strokeStyle = 'hsl(348, 100%, 84%)';
+			context.strokeStyle = 'hsl(360, 98%, 40%)';
 			context.fillStyle = gradient;
 			
 			context.save();
@@ -113,7 +113,7 @@ BUTTERFLY.prototype = {
 			context.restore();
 			
 			context.lineWidth = 2;
-			context.strokeStyle = 'hsl(351, 19%, 72%)';
+			context.strokeStyle = 'hsl(0, 100%, 61%)';
 			context.beginPath();
 			context.moveTo(-2, -10);
 			context.bezierCurveTo(-5, -20, -3 - Math.sin(this.theta), -30, -8 - Math.sin(this.theta), -40);
@@ -122,9 +122,9 @@ BUTTERFLY.prototype = {
 		}
 		context.save();
 		var gradient = context.createLinearGradient(-3, 0, 3, 0);
-		gradient.addColorStop(0, 'hsl(351, 100%, 89%)'); 
-		gradient.addColorStop(0.5, 'hsl(351, 100%, 89%)');
-		gradient.addColorStop(1, 'hsl(351, 100%, 89%)');
+		gradient.addColorStop(0, 'hsl(0, 100%, 61%)'); 
+		gradient.addColorStop(0.5, 'hsl(0, 100%, 61%)');
+		gradient.addColorStop(1, 'hsl(0, 100%, 61%)');
 		context.fillStyle = gradient;
 		context.beginPath();
 		context.moveTo(0, -10);
@@ -173,7 +173,7 @@ PARTICLE.prototype = {
 		context.translate(this.x, this.y);
 		context.scale(2 - this.opacity, 2 - this.opacity);
 		context.beginPath();
-		context.fillStyle =  'hsla(351, 19%, 72%, ' + this.opacity + ')';
+		context.fillStyle =  'hsla(0, 100%, 75%, ' + this.opacity + ')';
 		context.arc(0, 0, this.RADIUS, 0, Math.PI * 2, false);
 		context.fill();
 		context.restore();
